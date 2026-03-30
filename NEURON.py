@@ -6,10 +6,10 @@ import pandas as pd
 import io
 import re
 import plotly.express as px
-from rdkit.Chem.Draw import rdMolDraw2D
+import plotly.graph_objects as go
 from rdkit import Chem
+from rdkit.Chem import Draw, Descriptors, rdMolDescriptors, rdDepictor
 from rdkit.Chem.Draw import rdMolDraw2D
-from rdkit.Chem import rdDepictor, Descriptors, rdMolDescriptors
 import streamlit.components.v1 as components
 import joblib
 from sklearn.preprocessing import StandardScaler
